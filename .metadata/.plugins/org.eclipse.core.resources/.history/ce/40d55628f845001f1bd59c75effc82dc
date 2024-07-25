@@ -1,0 +1,27 @@
+package SoftwareGUI;
+
+import java.awt.Dimension;
+
+import javax.swing.JFrame;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		new myFrame("AMT Solution");
+	}
+
+}
+
+class myFrame extends JFrame {
+	
+	public myFrame(String title) {
+		this.setTitle(title);
+		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		this.setResizable(false); 
+		this.setSize(new Dimension(700, 500));
+		
+		this.setVisible(true);
+	}
+	
+}

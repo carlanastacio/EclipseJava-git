@@ -1,0 +1,10 @@
+package W_Enum23;
+
+// PWEDE MAY PUBLIC O WALA KASI NASA SAME PACKAGE LANG
+enum AB_AILevel {
+	
+		EASY, 
+		MEDIUM, 
+		HARD;
+	
+}

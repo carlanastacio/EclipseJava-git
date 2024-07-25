@@ -1,0 +1,26 @@
+package SoftwareGUI;
+
+import java.awt.Dimension;
+
+import javax.swing.JFrame;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		new myFrame();
+	}
+
+}
+
+class myFrame extends JFrame {
+	
+	public myFrame() {
+		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		this.setSize(new Dimension(500, 500));
+		
+		this.pack();
+		this.setVisible(true);
+	}
+	
+}

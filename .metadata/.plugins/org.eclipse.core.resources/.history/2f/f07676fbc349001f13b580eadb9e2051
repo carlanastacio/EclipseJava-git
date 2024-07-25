@@ -1,0 +1,23 @@
+package B_Intermediate;
+
+import java.awt.*;
+import javax.swing.*;
+
+public class C20_ProgressBar {
+
+	public static void main(String[] args) {
+
+		// Progress Bar - Visual aid to let the user know that an application is in progress
+
+		ProgressBarDemo demo = new ProgressBarDemo();
+	}
+
+}
+
+class ProgressBarDemo {
+	
+	public ProgressBarDemo() {
+		
+	}
+
+}

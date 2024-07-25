@@ -1,0 +1,11 @@
+package B_Intermediate;
+
+public class C20_ProgressBar {
+
+	public static void main(String[] args) {
+
+		// Create an instance of ProgressBarDemo to display the progress bar
+
+	}
+
+}

@@ -1,0 +1,18 @@
+package Warmup;
+
+public class Warmup1_diff21 {
+
+	public static void main(String[] args) {
+		
+
+		System.out.println(diff21(1));
+
+	}
+	
+	static public int diff21(int n) {
+	 if (condition) {
+		
+	} else {
+
+	}
+}

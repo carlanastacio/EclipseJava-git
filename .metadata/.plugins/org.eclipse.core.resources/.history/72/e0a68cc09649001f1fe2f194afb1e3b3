@@ -1,0 +1,16 @@
+package B_DatatypeConversion;
+
+public class E_WrapperClasses {
+
+	public static void main(String[] args) {
+
+		int i = 5;
+		Integer iWrap = 5;
+		
+		Integer integ = new Integer(5);
+		
+		Arraylist<Integer> numbers = new Arraylist<>();
+		numbers.add(5);
+	}
+
+}

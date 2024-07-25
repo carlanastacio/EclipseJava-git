@@ -1,0 +1,13 @@
+package Practice;
+
+import java.util.Scanner;
+
+public class Easy {
+
+	public static void main(String[] args) {
+		Scanner s = new Scanner(System.in);
+		String username = s.nextLine();
+		System.out.println("Username: " + username);
+	}
+
+}

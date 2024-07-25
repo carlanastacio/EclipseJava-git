@@ -1,0 +1,47 @@
+package B_Intermediate;
+
+import java.awt.Dimension;
+import java.awt.FlowLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JTextField;
+
+public class B15_TextField {
+
+	public static void main(String[] args) {
+		
+		// JTextField = A GUI textbox component that can be used to add, set, or get text
+
+		MyFrame myFrame = new MyFrame();
+
+	}
+
+}
+
+class MyFrame extends JFrame implements ActionListener {
+
+	MyFrame() {
+		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		this.setLayout(new FlowLayout());
+		
+		JButton jButton = new JButton("submit");
+		
+		JTextField jTextField = new JTextField();
+		jTextField.setPreferredSize(new Dimension(250, 40));
+		
+		this.add(jButton);
+		this.add(jTextField); // we should tho this before pack();
+		this.pack();
+		this.setVisible(true);
+	}
+	
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
+	
+}

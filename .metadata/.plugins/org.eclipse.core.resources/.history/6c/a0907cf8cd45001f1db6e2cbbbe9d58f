@@ -1,0 +1,24 @@
+package B_Intermediate;
+
+import java.awt.event.ActionListener;
+
+import javax.swing.JFrame;
+
+public class B17_RadioButton {
+
+	public static void main(String[] args) {
+		 
+		// JRadioButton = One or more buttons in a grouping in which only 1 may be selected per group
+
+		new myFrame4();
+	}
+
+}
+
+class myFrame4 extends JFrame implements ActionListener {
+	
+	public myFrame4() {
+		// TODO Auto-generated constructor stub
+	}
+	
+}

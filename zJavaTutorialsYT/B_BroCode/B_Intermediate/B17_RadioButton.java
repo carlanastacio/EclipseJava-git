@@ -1,0 +1,74 @@
+package B_Intermediate;
+
+import java.awt.FlowLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.ButtonGroup;
+import javax.swing.ImageIcon;
+import javax.swing.JFrame;
+import javax.swing.JRadioButton;
+
+public class B17_RadioButton {
+
+	public static void main(String[] args) {
+		 
+		// JRadioButton = One or more buttons in a grouping in which only 1 may be selected per group
+
+		new myFrame4();
+	}
+
+}
+
+class myFrame4 extends JFrame implements ActionListener { // now myFrame behaves like JFrame
+	
+	JRadioButton pizzaButton;
+	JRadioButton hamberguRadioButton;
+	JRadioButton hotdogButton;
+	ImageIcon allIcon;
+	
+	public myFrame4() {
+
+		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		this.setLayout(new FlowLayout());
+		
+		allIcon = new ImageIcon("like.png");
+		
+		pizzaButton = new JRadioButton("Pizza");
+		hamberguRadioButton = new JRadioButton("Hamburger");
+		hotdogButton = new JRadioButton("Hotdog");
+		
+		ButtonGroup group = new ButtonGroup();
+		group.add(pizzaButton);
+		group.add(hamberguRadioButton);
+		group.add(hotdogButton);
+		
+		pizzaButton.addActionListener(this);
+		hamberguRadioButton.addActionListener(this);
+		hotdogButton.addActionListener(this);
+		
+		pizzaButton.setIcon(allIcon);
+		hamberguRadioButton.setIcon(allIcon);
+		hotdogButton.setIcon(allIcon);
+		
+		this.add(pizzaButton);
+		this.add(hamberguRadioButton);
+		this.add(hotdogButton);
+		this.pack();
+		this.setVisible(true);
+		
+	}
+
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		
+		if (e.getSource()==pizzaButton) {
+			System.out.println("You ordered pizza");
+		} else if (e.getSource()==hamberguRadioButton) {
+			System.out.println("You ordered a burger");
+		} else if (e.getSource()==hotdogButton) {
+			System.out.println("You ordered a hotdog");
+		} 
+	}
+	
+}

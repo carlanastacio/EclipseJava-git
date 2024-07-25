@@ -1,0 +1,18 @@
+package B_DatatypeConversion;
+
+public class D_ExplicitConversion {
+
+	public static void main(String[] args) {
+
+		double pi = 3.14;
+		float f = (float)pi; // pero pag tinangal natin un (float) mag rereklamo yan
+		
+		System.out.println("double : " + f + "\nfloat : " + pi);
+		
+		int x = (int)f; // hindi supported ang decimal
+		System.out.println("int : " + x);
+		
+		int integ = 1000;
+	}
+
+}

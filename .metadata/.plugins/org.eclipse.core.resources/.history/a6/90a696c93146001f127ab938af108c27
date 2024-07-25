@@ -1,0 +1,28 @@
+package Warmup;
+
+public class Warmup1 {
+
+	public static void main(String[] args) {
+
+		sleepIn(false, false);
+		
+		
+	}
+
+	static boolean sleepIn(boolean weekday, boolean vacation) {
+		
+		boolean found = false;
+		
+		if (!weekday || !vacation) {
+			return found = true;
+		} else if (!weekday || vacation) {
+			return found = true;
+		} else if (weekday || !vacation) {
+			return found = false;
+		}
+		
+		
+		return found;
+	}
+	
+}

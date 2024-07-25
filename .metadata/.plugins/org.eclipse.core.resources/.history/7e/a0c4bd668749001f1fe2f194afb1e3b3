@@ -1,0 +1,16 @@
+package B_DatatypeConversion;
+
+public class A_ParsingDataImplementation {
+	
+	public static void main(String[] args) {
+		
+		String x = "100.5";
+		
+		int integ = Integer.parseInt(x);
+		
+		System.out.println(x + 1); // This is concatanetion // outputs 1001
+		System.out.println(integ + 1); // outputs 101
+		
+	}
+
+}

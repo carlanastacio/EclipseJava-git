@@ -1,0 +1,17 @@
+package B_Intermediate;
+
+public class B18_ComboBox {
+
+	public static void main(String[] args) {
+		
+		// JComboBox = A component that combines a button or editable field and a drop-down list
+
+		new myFrame5();
+		
+	}
+
+} 
+
+class myFrame5 {
+	
+}

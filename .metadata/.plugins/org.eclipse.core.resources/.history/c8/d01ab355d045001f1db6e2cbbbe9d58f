@@ -1,0 +1,25 @@
+package B_Intermediate;
+
+import java.awt.event.ActionListener;
+
+import javax.swing.JFrame;
+
+public class B18_ComboBox {
+
+	public static void main(String[] args) {
+		
+		// JComboBox = A component that combines a button or editable field and a drop-down list
+
+		new myFrame5();
+		
+	}
+
+} 
+
+class myFrame5 extends JFrame implements ActionListener{
+	
+	public myFrame5() {
+		this.setClo
+	}
+	
+}

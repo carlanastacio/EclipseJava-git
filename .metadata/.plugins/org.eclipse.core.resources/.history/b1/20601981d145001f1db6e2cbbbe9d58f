@@ -1,0 +1,55 @@
+package B_Intermediate;
+
+import java.awt.FlowLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JComboBox;
+import javax.swing.JFrame;
+
+public class B18_ComboBox {
+
+	public static void main(String[] args) {
+		
+		// JComboBox = A component that combines a button or editable field and a drop-down list
+
+		new myFrame5();
+		
+	}
+
+} 
+
+class myFrame5 extends JFrame implements ActionListener{
+	
+	JComboBox comboBox;
+	
+	public myFrame5() {
+		this.setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
+		this.setLayout(new FlowLayout());
+		
+		String animals[] = {"Dog", "Cat", "Bird"};
+		
+		comboBox = new JComboBox(animals);
+		comboBox.addActionListener(this);
+		
+		//comboBox.setEditable(true); // edit the lsit of combobox
+		//System.out.println(comboBox.getItemCount());	 // get the numbers of item in the array
+		//comboBox.addItem("Horse"); // add item on array
+		comboBox.insertItemAt(animals, ABORT);
+		
+		this.add(comboBox);
+		this.pack();
+		this.setVisible(true);
+	}
+
+	@Override
+	public void actionPerformed(ActionEvent e) {
+
+		if (e.getSource()==comboBox) {
+			System.out.println(comboBox.getSelectedItem());
+			System.out.println(comboBox.getSelectedIndex());
+
+		}
+	}
+	
+}

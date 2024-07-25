@@ -1,0 +1,51 @@
+package B_Intermediate;
+
+import java.awt.*;
+import javax.swing.*;
+import javax.swing.event.*;
+
+public class B19_Slider {
+
+	public static void main(String[] args) {
+		
+		// JSlider =  GUI component that lets user enter a value 
+	    //			  by using an adjustable sliding knob on a track
+		
+		SliderDemo sliderDemo = new SliderDemo();
+	}
+
+}
+
+class SliderDemo implements ChangeListener {
+	
+	JSlider slider;
+	JFrame frame;
+	JPanel panel;
+	JLabel label;
+
+	public SliderDemo() {
+
+		frame = new JFrame("Slider Demo");
+		panel = new JPanel();
+		label = new JLabel();
+		slider = new JSlider(0, 100, 50); // min, max, sliderstart num
+		
+		
+		
+		panel.add(slider);
+		panel.add(label);
+		frame.add(panel);
+		
+		frame.setSize(500,500);
+		frame.setVisible(true);
+
+	}
+	
+	@Override
+	public void stateChanged(ChangeEvent e) { // state change, we can update something when we change
+		// TODO Auto-generated method stub
+		
+	}
+	
+}
+

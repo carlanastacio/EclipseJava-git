@@ -1,0 +1,28 @@
+package B_DatatypeConversion;
+
+import java.util.Scanner;
+
+public class A_ParsingDataImplementation {
+	
+	public static void main(String[] args) {
+		
+		String x = "100";
+		
+		// Using parseInt
+		int integ = Integer.parseInt(x);
+		
+		System.out.println(x + 1); // This is concatanetion // outputs 1001
+		System.out.println(integ + 1); // outputs 101
+		
+		// Using parseFloat
+		x = "125.05";
+		float flo = Float.parseFloat(x);
+		System.out.println(flo);
+		
+		Scanner scan = new Scanner(System.in);
+		System.out.print("Enter Number: ");
+		int num = Integer.parseInt(scan.nextLine()); // kaos magiging number format execption na ito which w e can use tryy catch to output mismatch exception!
+		System.out.println("Number is " + num);
+	}
+
+}

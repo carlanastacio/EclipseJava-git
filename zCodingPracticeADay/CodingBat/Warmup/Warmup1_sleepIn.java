@@ -1,0 +1,16 @@
+package Warmup;
+
+public class Warmup1_sleepIn {
+
+	public static void main(String[] args) {
+
+		boolean found = sleepIn(false, false);
+		System.out.println(found);
+	}
+
+	static boolean sleepIn(boolean weekday, boolean vacation) {
+		if (!weekday || vacation) return true;
+		else return false;
+	}
+
+}

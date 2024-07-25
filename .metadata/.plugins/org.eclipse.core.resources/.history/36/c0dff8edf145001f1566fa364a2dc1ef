@@ -1,0 +1,20 @@
+package Practice;
+
+import java.util.*;
+import java.io.*;
+
+class Easy1_2 {
+
+	public static String CodelandUsernameValidation(String str) {
+		
+		return str;
+	}
+
+	public static void main(String[] args) {
+		// keep this function call here
+		Scanner s = new Scanner(System.in);
+		System.out.print(CodelandUsernameValidation(s.nextLine()));
+
+	}
+
+}

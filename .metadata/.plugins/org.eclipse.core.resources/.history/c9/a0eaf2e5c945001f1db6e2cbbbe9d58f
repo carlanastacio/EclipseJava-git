@@ -1,0 +1,32 @@
+package B_Intermediate;
+
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JFrame;
+
+public class B16_Checkbox {
+
+	public static void main(String[] args) {
+
+		new myFrame();
+
+		
+	}
+
+} 
+
+class myFrame extends JFrame implements ActionListener {
+	
+	myFrame() {
+		this.setDefaultCloseOperation(EXIT_ON_CLOSE);
+		
+	}
+
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
+	
+}

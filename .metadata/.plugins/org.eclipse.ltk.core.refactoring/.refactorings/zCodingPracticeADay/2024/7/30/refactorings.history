@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;Warmup.Warmup1&apos; to &apos;Warmup1_sleepIn&apos;&#x0A;- Original project: &apos;zCodingPracticeADay&apos;&#x0A;- Original element: &apos;Warmup.Warmup1&apos;&#x0A;- Renamed element: &apos;Warmup.Warmup1_sleepIn&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Warmup1&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/CodingBat&lt;Warmup{Warmup1.java[Warmup1" matchStrategy="1" name="Warmup1_sleepIn" qualified="false" references="true" similarDeclarations="false" stamp="1721739269093" textual="false" version="1.0"/>
+</session>

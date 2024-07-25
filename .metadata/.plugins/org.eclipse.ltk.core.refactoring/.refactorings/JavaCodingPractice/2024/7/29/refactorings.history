@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;WebsiteGUI&apos; to &apos;SoftwareGUI&apos;&#x0A;- Original project: &apos;JavaCodingPractice&apos;&#x0A;- Original element: &apos;JavaCodingPractice/src/WebsiteGUI&apos;&#x0A;- Renamed element: &apos;JavaCodingPractice/src/SoftwareGUI&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;WebsiteGUI&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;WebsiteGUI" name="SoftwareGUI" qualified="false" references="true" stamp="1721411300903" textual="false" version="1.0"/>
+</session>

@@ -1,0 +1,11 @@
+package B_DatatypeConversion;
+
+public class C_ImplicitConversion {
+
+	public static void main(String[] args) {
+		
+		byte b = 127;
+
+	}
+
+}

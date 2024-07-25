@@ -1,0 +1,62 @@
+package B_Intermediate;
+
+import java.awt.Button;
+import java.awt.FlowLayout;
+import java.awt.Font;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.ImageIcon;
+import javax.swing.JButton;
+import javax.swing.JCheckBox;
+import javax.swing.JFrame;
+
+public class B16_Checkbox {
+
+	public static void main(String[] args) {
+
+		new myFrame3();
+
+		
+	}
+
+} 
+
+class myFrame3 extends JFrame implements ActionListener {
+	
+	JButton button;
+	JCheckBox checkBox;
+	
+	ImageIcon likeIcon;
+	ImageIcon rainbowIcon;
+	
+	myFrame3() {
+		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		this.setLayout(new FlowLayout());
+		
+		likeIcon = new ImageIcon("like.png");
+		
+		button = new JButton();
+		button.setText("Submit");
+		button.addActionListener(this);
+		
+		checkBox= new JCheckBox();
+		checkBox.setText("Turn me on!");
+		checkBox.setFocusable(false); // get rids of the annoying line square in the checkbox
+		checkBox.setFont(new Font("Consolas", Font.PLAIN, 35));
+		
+		this.add(button);
+		this.add(checkBox);
+		this.pack();
+		this.setVisible(true);
+	}
+
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		
+		if(e.getSource()==button) {
+			System.out.println(checkBox.isSelected()); // outptu truue or false 
+		}
+	}
+	
+}

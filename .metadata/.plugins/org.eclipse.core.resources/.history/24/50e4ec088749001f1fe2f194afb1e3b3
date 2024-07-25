@@ -1,0 +1,9 @@
+package B_DatatypeConversion;
+
+public class A_ParsingDataImplementation {
+	
+	public static void main(String[] args) {
+		
+	}
+
+}

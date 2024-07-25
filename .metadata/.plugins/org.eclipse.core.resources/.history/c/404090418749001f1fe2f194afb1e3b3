@@ -1,0 +1,15 @@
+package B_DatatypeConversion;
+
+public class A_ParsingDataImplementation {
+	
+	public static void main(String[] args) {
+		
+		String x = "100";
+		
+		int integ = Integer.parseInt(x);
+		
+		System.out.println(integ);
+		
+	}
+
+}

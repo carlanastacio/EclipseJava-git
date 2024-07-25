@@ -1,0 +1,55 @@
+package B_Intermediate;
+
+import java.awt.*;
+import javax.swing.*;
+
+public class C20_ProgressBar {
+
+	public static void main(String[] args) {
+
+		// Progress Bar - Visual aid to let the user know that an application is in progress
+
+		ProgressBarDemo demo = new ProgressBarDemo();
+	}
+
+}
+
+class ProgressBarDemo {
+	
+	JFrame jFrame = new JFrame();
+	JProgressBar bar = new JProgressBar();
+	
+	ProgressBarDemo() {
+	
+		bar.setValue(0);
+		bar.setBounds(0, 0, 420, 300);
+		bar.setStringPainted(true); // adds a perceantage
+		bar.setFont(new Font("MV Boli", Font.BOLD, 15)); // Set font for the progress string
+		bar.setBackground(Color.BLUE);
+		
+		jFrame.add(bar);
+		jFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		jFrame.setSize(420,420);
+		jFrame.setLayout(null);
+		jFrame.setVisible(true);
+		
+		fill();
+	}
+	
+	void fill() {
+		int counter = 0;
+		while(counter <= 100) {
+			bar.setValue(counter);
+			try {
+				Thread.sleep(50);
+			} catch (InterruptedException e) {
+			
+				e.printStackTrace();
+			}
+			
+			counter += 1;
+		}
+		bar.setString("Done!");
+	}
+
+}

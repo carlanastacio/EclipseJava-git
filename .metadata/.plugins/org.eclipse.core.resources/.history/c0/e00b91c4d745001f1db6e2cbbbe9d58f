@@ -1,0 +1,63 @@
+package B_Intermediate;
+
+import java.awt.*;
+import javax.swing.*;
+import javax.swing.event.*;
+
+public class B19_Slider {
+
+	public static void main(String[] args) {
+		
+		// JSlider =  GUI component that lets user enter a value 
+	    //			  by using an adjustable sliding knob on a track
+		
+		SliderDemo sliderDemo = new SliderDemo();
+	}
+
+}
+
+class SliderDemo implements ChangeListener {
+	
+	JSlider slider;
+	JFrame frame;
+	JPanel panel;
+	JLabel label;
+
+	public SliderDemo() {
+
+		frame = new JFrame("Slider Demo");
+		panel = new JPanel();
+		label = new JLabel();
+		slider = new JSlider(0, 100, 50); // min, max, sliderstart num
+		
+		slider.setPreferredSize(new Dimension(400, 200)); // width | height
+		
+		slider.setPaintTicks(true); // changes the knob of slider
+		slider.setMinorTickSpacing(10); // makes some step knobs for the slider
+		
+		slider.setPaintTrack(true);
+		slider.setMajorTickSpacing(25); // adds a larger unit of step knobs 
+		
+		slider.setPaintLabels(true); // add number on the steps
+		slider.setFont(new Font("MV Boli", Font.PLAIN, 15));
+		
+		slider.setOrientation(0);
+		
+		panel.add(slider);
+		panel.add(label);
+		frame.add(panel);
+		
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.setSize(500,500);
+		frame.setVisible(true);
+
+	}
+	
+	@Override
+	public void stateChanged(ChangeEvent e) { // state change, we can update something when we change
+		// TODO Auto-generated method stub
+		
+	}
+	
+}
+

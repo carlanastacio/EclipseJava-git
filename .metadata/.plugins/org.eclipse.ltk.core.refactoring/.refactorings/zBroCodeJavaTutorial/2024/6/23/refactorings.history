@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move package &apos;A1_JavaGUIintro&apos; to &apos;zSDPTJavaPractice/B_BroCode&apos;&#x0A;- Original project: &apos;zBroCodeJavaTutorial&apos;&#x0A;- Destination element: &apos;zSDPTJavaPractice/B_BroCode&apos;&#x0A;- Original element: &apos;zBroCodeJavaTutorial/src/A1_JavaGUIintro&apos;&#x0A;- Update references to refactored element" description="Move package" destination="=zSDPTJavaPractice/B_BroCode" element1="/src&lt;A1_JavaGUIintro" flags="589830" fragments="1" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.movePackages" stamp="1717510790245" version="1.0"/>
+</session>
