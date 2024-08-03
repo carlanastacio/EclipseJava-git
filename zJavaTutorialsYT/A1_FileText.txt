@@ -1,5 +1,0 @@
-this is a filewriter method
-Roses are red
-Violets are blue
-diba tanginamo
-(A poem by real bro)
